@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ******************************* */
+body {
+	margin:  0;
+    background: #062455;
+}
+
+h2 {
+    margin: 0;
+}
+.page-content {
+	width: 100%;
+	margin:  0 auto;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-content  {
+    background-image: url(../images/pixelspace.png);
+	width: 975px;
+	border-radius: 15px;
+	margin: 185px 0;
+	font-family: 'Nunito', sans-serif;
+	color: rgb(10, 9, 9);
+	font-weight: 700;
+	font-size: 16px;
+	position: relative;
+}
+.form-content .form-detail {
+    padding: 30px 70px 5px 40px;
+	position: relative;
+}
+.form-content .form-detail h2 {
+	font-size: 50px;
+	text-align: center;
+	position: relative;
+	padding: 16px 0 13px;
+	margin-bottom: 55px;
+}
+
+.form-content .form-row-total {
+    display: flex;
+    justify-content: space-between;
+}
+/* per quelli della prima riga */
+.form-content .form-row {
+    width: 30%;
+}
+
+/* per fare piu' larghe quelli di sotto */
+.form-content .form-row-total:nth-of-type(2) .form-row {
+    width: 46%;
+}
+.form-content .form-detail .form-row-last {
+	text-align: center;
+}
+.form-content .form-detail .input-text {
+	margin-bottom: 45px;
+}
+.form-content .form-detail input {
+	width: 95%;
+    padding: 14.5px 0px 14.5px 30px;
+    border: 2px solid #ccc;
+    appearance: unset;
+    outline: none;
+    border-radius: 27.5px;
+	font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.6)
+}
+.form-content .form-detail input:focus {
+	border: 3px solid rgb(7, 2, 2);
+}
+.form-content .form-detail .submit {
+	background: #f25d5d;
+	border-radius: 25px;
+	width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border: none;
+	margin: 20px 0 0 35px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+	font-weight: 700;
+}
+.form-content .form-detail .register:hover {
+	background: #d95252;
+}
+.form-content .form-detail .form-row-last input {
+	padding: 14px;
+}
+input::placeholder {
+    color: rgb(5, 5, 5);
+    font-size: 20px;
+    opacity: 1; /* Firefox */
+}
+
+#necessary {
+    font-size: 14px;
+    padding-left: 80%;
+    margin-top: -28px;
+    margin-right: -15px;
+    color: yellowgreen;
+}
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 210%;
+    left: 30%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(32, 32, 32) transparent transparent transparent;
+  }
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    padding: 4px;
+}
+/* end tooltip */
+
+
+.registration_link {
+    color: white;
+    padding-left: 40%;
+}
+
+a{text-decoration: none;}
+a:link {
+    color: tomato;
+}
+
+/* visited link */
+a:visited {
+    color: #2cf72c;
+}
+  
+  /* mouse over link */
+a:hover {
+    text-decoration:underline;
+}
+  
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1199px) {
+	.form-content {
+	    margin: 185px 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.form-content .form-row-total {
+		flex-direction: column;
+	}
+	.form-content .form-row {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 575px) {
+	.form-content .form-detail {
+	    padding: 30px 45px 30px 10px;
+	}
+}

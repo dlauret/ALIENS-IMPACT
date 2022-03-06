@@ -1,0 +1,191 @@
+@font-face {
+    font-family:"chargen";
+    src: url("../fonts/chargen.ttf") format("truetype");
+}
+
+
+body {
+    /*background-color: #105469;*/
+    background-image: url("../images/SpaceShooterAssetPack_BackGrounds.png");
+    background-repeat: repeat;
+    z-index: -1;
+    color: white;
+    text-align: center;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.messagegameover {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 45px;
+    font-family: chargen;
+    color: coral;
+}
+
+body>h2:first-of-type.messagegameover {
+    background-color: rgba(12, 185, 12, 0.699);
+    margin-left: 5%;
+    margin-right: 5%;}
+
+
+.points {
+    margin: 3% 5% 4% 5%;
+    background-color: rgba(220, 20, 60, 0.829);
+}
+.score {
+    float: left;
+    margin-top: 0;
+    padding-left: 6%;
+    padding-top: 15px;
+}
+.time {
+    float: right;
+    margin-top: 0;
+    padding-right: 6%;
+    padding-top: 15px;
+}
+.recordscore {
+    visibility: hidden;
+    margin-top: -2%;
+    font-size: 40px;
+}
+.recordtime {
+    visibility: hidden;
+    margin-top: 0%;
+    font-size: 40px;
+}
+
+
+/* CSS tabella */
+/* sorting */
+.table-sortable th {
+    cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+    content: "\01F53A";
+    color: transparent;
+    text-shadow: 0 0 0 crimson;
+}
+
+.table-sortable .th-sort-desc::after {
+    content: "\01F53B";
+    color: transparent;
+    text-shadow: 0 0 0 crimson;
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+    margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* seleziono il primo username */
+.table-sortable tbody>tr:first-of-type>td:first-of-type::before {
+    content: "\01F3C6"; /* prize */
+    padding-right: 28%;
+}
+
+/* style */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    text-align: center;
+    width: 40%;
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #012B39;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid rgb(0, 0, 20);
+    background: #012B39;
+    color: #E2B842;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 1.5em 1em;
+}
+
+tr {
+    border-bottom: 1px solid rgb(0, 0, 20);
+    transition: background 0.25s ease;
+}
+tr:nth-child(odd){
+    background: #064a61;
+}
+
+tr:last-of-type {
+    border-bottom: 0px;
+}
+
+td {
+    border-right: 1px solid rgb(0, 0, 20);
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+}
+td:last-of-type {
+    border-right: 0px;
+}
+
+
+tbody tr:hover {
+    background: #014055;
+}
+
+/* nella prima cella dove c'e' il prize text-align: left */
+tbody>tr:first-of-type>td:first-of-type {
+    text-align: left;
+}
+
+/* Fine css tabella */
+
+
+/* Submits */
+.form-row-last {
+    margin-top: 3%;
+}
+input {
+	width: 90%;
+    padding: 15px 20px 15px 20px;
+    border: 3px solid #ccc;
+    text-align: center;
+    appearance: unset;
+    outline: none;
+    border-radius: 27.5px;
+	font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.5);
+}
+input:focus {
+	border: 3px solid rgb(2, 18, 71);
+}
+.submit {
+	background: crimson;
+	border-radius: 25px;
+	width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border: none;
+	margin: 20px 0 0 35px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+	font-weight: 700;
+}
+

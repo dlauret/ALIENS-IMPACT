@@ -1,0 +1,70 @@
+@font-face {
+    font-family:"chargen";
+    src: url("../fonts/chargen.ttf") format("truetype");
+}
+
+body {
+    background-color: black;
+    font-family: chargen;
+    padding-top: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+}
+
+#title {
+    font-family: chargen;
+    font-size: xx-large;
+    color: #02ff3b;
+    margin-top: 40px;
+    
+}
+
+#rules {
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #cab93e;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #d41e1e;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(70, 0, 0);
+    font-family: chargen;
+    left: 43%;
+    margin-top: 25px;
+  }
+  
+  .button:hover {background-color: #d41e1e}
+  
+  .button:active {
+    background-color: #d41e1e;
+    box-shadow: 0 5px rgb(70, 0, 0);
+    transform: translateY(4px);
+  }

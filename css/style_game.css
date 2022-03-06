@@ -1,0 +1,42 @@
+@font-face {
+    font-family:"chargen";
+    src: url("../fonts/chargen.ttf") format("truetype");
+}
+
+body {
+    /*background-image: url("../images/sfondo1.jpg");*/
+    background-image: url("../images/SpaceShooterAssetPack_BackGrounds.png");
+    background-repeat: repeat;
+    font-family: chargen;
+}
+
+
+/* classe che contiene nel nome 'entity' */
+[class*="entity"] { 
+    position: fixed;
+}
+
+.gameData {
+    padding-top: 40px;
+    display: inline;
+    font-size: 50px;
+}
+
+.entityscore {
+    color: #02ff3b;
+    float: right;
+    padding-left: 10%;
+}
+
+#clock {
+    color: #02ff3b;
+    float: left;
+    position: relative;
+    left: 30%;
+
+}
+
+#lives {
+    font-size: 25px;
+}
+
